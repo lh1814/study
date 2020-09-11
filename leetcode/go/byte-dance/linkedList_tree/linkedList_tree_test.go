@@ -1,6 +1,7 @@
 package linkedList_tree
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -41,4 +42,37 @@ func TestSortList(t *testing.T) {
 	if !reflect.DeepEqual(res, sortList(head)) {
 		t.Fatal("TestSortList should be equal")
 	}
+}
+
+func TestZigzagLevelOrder(t *testing.T) {
+	req:=&TreeNode{
+		Val:   3,
+		Left:  &TreeNode{
+			Val:   9,
+			Left:  nil,
+			Right: nil,
+		},
+		Right: &TreeNode{
+			Val:   20,
+			Left:  &TreeNode{
+				Val:   15,
+				Left:  nil,
+				Right: nil,
+			},
+			Right: &TreeNode{
+				Val:   7,
+				Left:  nil,
+				Right: nil,
+			},
+		},
+	}
+
+	fmt.Println(zigzagLevelOrder(req))
+
+}
+
+
+func TestTest(t *testing.T) {
+	a:=[]int{1,2,3}
+	fmt.Println(a)
 }

@@ -1,4 +1,4 @@
-package category
+package sample
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 /*
 @Author: by LH
 @date:  2020/8/10
-@function: 分类：蓄水池抽样
+@function: 蓄水池抽样
 */
 
 // 382. 链表随机节点
@@ -151,4 +151,3 @@ func bfs(board [][]byte, i, j int) {
 }
 
 
-//478.在圆内随机生成点

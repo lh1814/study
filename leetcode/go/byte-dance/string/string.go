@@ -1,7 +1,7 @@
 package string
 
 import (
-	"go-example/library/time"
+	//"go-example/library/time"
 	"strings"
 )
 
@@ -87,7 +87,7 @@ func multiply(num1 string, num2 string) string {
 }
 
 func reverseWords(s string) string {
-	defer time.Trace("reverseWords")()
+	//defer time.Trace("reverseWords")()
 	var l, r int
 	x := []byte(s)
 	for l < len(s) {
